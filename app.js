@@ -13,6 +13,7 @@ const { mongoURI } = require("./secret");
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use("/uploads/images", express.static(path.join("uploads", "images")));
