@@ -9,7 +9,6 @@ const cors = require("cors");
 const placesRoutes = require("./routes/places-routes");
 const usersRoutes = require("./routes/users-routes");
 const HttpError = require("./models/http-error");
-const { mongoURI } = require("./secret");
 
 const app = express();
 
