@@ -3,7 +3,7 @@
     "DB_USER": "nibarra",
     "DB_PASSWORD": "YD8faSuiT1J9gQyv",
     "DB_NAME": "mern",
-    "GOOGLE_API_KEY": "...",
+    "LOCATION_IQ_KEY": "pk.08c3f1ff6a4710cb84f262248bff2ded",
     "JWT_KEY": "supersecret_dont_share"
   }
 }
