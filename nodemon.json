@@ -1,0 +1,9 @@
+{
+  "env": {
+    "DB_USER": "nibarra",
+    "DB_PASSWORD": "YD8faSuiT1J9gQyv",
+    "DB_NAME": "mern",
+    "GOOGLE_API_KEY": "...",
+    "JWT_KEY": "supersecret_dont_share"
+  }
+}

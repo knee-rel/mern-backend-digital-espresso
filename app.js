@@ -51,13 +51,25 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster1.aq0rupd.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
   .then(() => {
     app.listen(5001);
   })
   .catch((err) => {
     console.log(err);
   });
+
+// mongoose
+//   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => {
+//     app.listen(5001);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 // mongoose
 //   .connect(mongoURI)
